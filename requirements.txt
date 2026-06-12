@@ -1,0 +1,11 @@
+Flask==3.0.3
+Flask-CORS==4.0.1
+Flask-Limiter==3.6.0
+Flask-SQLAlchemy==3.1.1
+python-dotenv==1.0.1
+numpy==1.26.4
+scikit-learn==1.5.0
+nltk==3.8.1
+# sentence-transformers==3.0.1  # Uncomment for better NLP (requires ~80MB model download)
+# torch>=2.0.0                 # Required by sentence-transformers
+gunicorn==22.0.0

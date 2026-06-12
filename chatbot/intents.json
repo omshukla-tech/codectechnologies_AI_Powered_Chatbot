@@ -1,0 +1,262 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Good morning", "Good evening",
+        "Good afternoon", "What's up", "Howdy", "Hey there",
+        "Hi there", "Greetings", "Yo", "Hola", "Heya"
+      ],
+      "responses": [
+        "Hello! Welcome to AI Assist. How can I help you today? 👋",
+        "Hi there! I'm your AI assistant. What can I do for you?",
+        "Hey! Great to have you here. How may I assist you?",
+        "Greetings! I'm here to help with any questions you might have."
+      ],
+      "context_set": "greeting"
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye", "Goodbye", "See you later", "See you",
+        "Take care", "Cya", "Talk to you later", "Gotta go",
+        "I'm leaving", "Peace out", "Later", "Catch you later"
+      ],
+      "responses": [
+        "Goodbye! Thank you for chatting with us. Have a great day! 😊",
+        "Take care! Feel free to come back anytime you need help.",
+        "See you later! Wishing you a wonderful day ahead.",
+        "Bye! It was great talking to you. Don't hesitate to reach out again."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks", "Thank you", "Thank you so much", "Thanks a lot",
+        "Appreciate it", "Much appreciated", "Thanks a ton",
+        "Thank you kindly", "Thanks for your help", "Thx"
+      ],
+      "responses": [
+        "You're welcome! Happy to help! 😊",
+        "Glad I could assist! Is there anything else you need?",
+        "Anytime! That's what I'm here for.",
+        "My pleasure! Don't hesitate to ask if you have more questions."
+      ]
+    },
+    {
+      "tag": "business_hours",
+      "patterns": [
+        "What are your timings?", "What time do you open?",
+        "What time do you close?", "Are you open on weekends?",
+        "What are your business hours?", "When are you available?",
+        "Do you work on Sundays?", "Sunday hours",
+        "Weekend hours", "Opening hours", "What's your schedule",
+        "Are you open 24/7", "Office hours"
+      ],
+      "responses": [
+        "We are available from 9:00 AM to 6:00 PM, Monday through Friday. 🕘",
+        "Our business hours are 9 AM - 6 PM (Monday to Friday). We're closed on weekends.",
+        "We operate Monday to Friday, 9:00 AM to 6:00 PM. Our team is offline on weekends."
+      ],
+      "context_set": "hours"
+    },
+    {
+      "tag": "sunday_hours",
+      "patterns": [
+        "And on Sunday?", "What about Sunday?", "Are you open Sunday?",
+        "Do you work Sunday?", "Sunday timing", "Is Sunday a working day?"
+      ],
+      "responses": [
+        "Unfortunately, we are closed on Sundays. Our hours are Monday to Friday, 9 AM - 6 PM.",
+        "We don't operate on Sundays. However, you can still send us a message and we'll get back to you on Monday!"
+      ],
+      "context_filter": "hours"
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "What services do you offer?", "What do you do?",
+        "Tell me about your services", "Your services",
+        "What can you help me with?", "What do you provide?",
+        "List of services", "Service offerings"
+      ],
+      "responses": [
+        "We offer a range of AI-powered services including:\n\n🤖 **Chatbot Development** - Custom conversational AI\n📊 **Data Analytics** - Intelligent data processing & visualization\n☁️ **Cloud Solutions** - Scalable cloud infrastructure\n🔒 **Cybersecurity** - Advanced threat detection\n\nWhich service interests you?",
+        "Our core services include:\n\n1️⃣ AI Chatbot Development\n2️⃣ Data Analytics & Insights\n3️⃣ Cloud Computing Solutions\n4️⃣ Cybersecurity Services\n5️⃣ Natural Language Processing\n\nWould you like more details on any of these?"
+      ],
+      "context_set": "services"
+    },
+    {
+      "tag": "pricing",
+      "patterns": [
+        "What are your prices?", "How much does it cost?",
+        "What is the pricing?", "Tell me about pricing",
+        "Pricing plans", "How much do you charge?",
+        "What are the rates?", "Cost", "Fees",
+        "Subscription cost", "Monthly fee"
+      ],
+      "responses": [
+        "Our pricing is tailored to your specific needs. We offer:\n\n🚀 **Starter** - $99/month (Basic features)\n💼 **Professional** - $299/month (Advanced features)\n🏢 **Enterprise** - Custom pricing (Full suite)\n\nWould you like a detailed quote?",
+        "We have flexible pricing plans starting from $99/month. For a custom quote tailored to your requirements, please let me know more about your project!"
+      ],
+      "context_set": "pricing"
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "How can I contact you?", "Contact information",
+        "Contact number", "Email address", "Phone number",
+        "Get in touch", "Support email", "Call you",
+        "How to reach you", "Contact details"
+      ],
+      "responses": [
+        "You can reach us at:\n\n📧 **Email:** support@aiassist.com\n📞 **Phone:** +1 (555) 123-4567\n🌐 **Website:** https://aiassist.com\n\nWe typically respond within 24 hours!",
+        "Here's how to get in touch:\n\n📧 support@aiassist.com\n📞 +1 (555) 123-4567\n\nOr visit our office at 123 Tech Street, Silicon Valley, CA 94025"
+      ],
+      "context_set": "contact"
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where are you located?", "What is your address?",
+        "Where is your office?", "Location",
+        "Where can I find you?", "Physical address",
+        "Headquarters"
+      ],
+      "responses": [
+        "Our headquarters is located at:\n📍 **123 Tech Street**\nSilicon Valley, CA 94025\nUnited States",
+        "We're based in the heart of Silicon Valley! Drop by at 123 Tech Street, California. 🏢"
+      ],
+      "context_set": "location"
+    },
+    {
+      "tag": "capabilities",
+      "patterns": [
+        "What can you do?", "What are your capabilities?",
+        "Are you an AI?", "Tell me about yourself",
+        "Who are you?", "What are you?",
+        "Your features", "What can you help with"
+      ],
+      "responses": [
+        "I'm an AI-powered assistant designed to help with:\n\n💬 Answering FAQs\n📝 Providing information about services\n🎯 Understanding natural language queries\n🔄 Maintaining conversation context\n📊 Remembering our chat history\n\nWhat would you like to know more about?",
+        "I'm your intelligent virtual assistant! I can answer questions, provide information about our services, help with common queries, and remember our conversation context. How can I help you today? 🤖"
+      ],
+      "context_set": "capabilities"
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "I need help", "Can you help me?", "Help",
+        "Support", "Technical support", "Customer support",
+        "I have a problem", "Issue", "Need assistance",
+        "Can you assist me"
+      ],
+      "responses": [
+        "I'd be happy to help you! Could you please describe the issue you're facing? I'll do my best to assist or connect you with the right team.",
+        "Of course! I'm here to help. Please tell me more about what you need assistance with, and I'll guide you to the best solution."
+      ],
+      "context_set": "support"
+    },
+    {
+      "tag": "refund",
+      "patterns": [
+        "Refund policy", "Can I get a refund?",
+        "Money back", "Return policy", "Cancellation",
+        "Cancel subscription", "Refund", "Refund request"
+      ],
+      "responses": [
+        "We have a **30-day money-back guarantee** on all our plans. If you're not satisfied, contact our support team for a full refund.",
+        "You can cancel anytime within the first 30 days for a full refund. After that, you can cancel at the end of your billing cycle. Would you like help with cancellation?"
+      ],
+      "context_set": "refund"
+    },
+    {
+      "tag": "security",
+      "patterns": [
+        "Is my data secure?", "Security", "Data protection",
+        "Privacy", "Is it safe?", "Encryption",
+        "Data security", "How do you protect data",
+        "GDPR", "Compliance"
+      ],
+      "responses": [
+        "Absolutely! Security is our top priority. We use:\n\n🔐 **End-to-end encryption** for all data\n🛡️ **SOC 2 Type II** certified\n📋 **GDPR compliant** data handling\n🔒 **256-bit SSL/TLS** encryption\n\nYour data is always safe with us.",
+        "Yes, your data is secure with us! We employ enterprise-grade security measures including encryption at rest and in transit, regular security audits, and strict access controls."
+      ],
+      "context_set": "security"
+    },
+    {
+      "tag": "api_docs",
+      "patterns": [
+        "Do you have an API?", "API documentation",
+        "How to use your API?", "API key",
+        "Developer API", "API access",
+        "Integration", "REST API"
+      ],
+      "responses": [
+        "Yes! We have a comprehensive REST API. You can find our API documentation at https://docs.aiassist.com. We provide:\n\n📡 RESTful endpoints\n🔑 API key authentication\n📘 Detailed documentation\n🧪 Sandbox environment for testing",
+        "Our API is available for developers! Get your API key from your dashboard and check out our docs at https://docs.aiassist.com for integration guides."
+      ]
+    },
+    {
+      "tag": "human_support",
+      "patterns": [
+        "Talk to a human", "Real person", "Customer service agent",
+        "Speak to representative", "Human agent",
+        "Can I talk to someone?", "Live agent",
+        "Connect me to support staff"
+      ],
+      "responses": [
+        "I understand you'd like to speak with a human agent. Let me transfer you to our support team. Please hold on while I connect you... 🎧",
+        "Sure, I'll connect you with a live support agent. Please expect a response within a few minutes during business hours."
+      ],
+      "context_set": "human_support"
+    },
+    {
+      "tag": "features",
+      "patterns": [
+        "What features do you have?", "Feature list",
+        "Tell me about features", "Product features",
+        "Key features", "Features overview"
+      ],
+      "responses": [
+        "Our platform comes packed with features:\n\n⚡ **AI-powered automation**\n📊 **Real-time analytics dashboard**\n🔔 **Smart notifications**\n👥 **Team collaboration tools**\n📱 **Mobile-friendly interface**\n🔄 **Third-party integrations**\n\nWhich feature interests you the most?",
+        "Here are our standout features:\n1️⃣ Natural Language Processing\n2️⃣ Smart Analytics & Insights\n3️⃣ Automated Workflows\n4️⃣ Custom Dashboard Builder\n5️⃣ 100+ Integrations\n6️⃣ 99.9% Uptime Guarantee"
+      ]
+    },
+    {
+      "tag": "trial",
+      "patterns": [
+        "Free trial", "Do you have a free trial?",
+        "Can I try before buying?", "Free demo",
+        "Trial period", "Try for free",
+        "Demo request", "Sample"
+      ],
+      "responses": [
+        "Yes! We offer a **14-day free trial** on all our plans. No credit card required. You can sign up at https://aiassist.com/trial 🎉",
+        "Absolutely! You can try all features free for 14 days. Visit our website to get started instantly!"
+      ]
+    },
+    {
+      "tag": "updates",
+      "patterns": [
+        "Latest updates", "What's new?", "Recent features",
+        "Changelog", "Product updates",
+        "Release notes", "New features"
+      ],
+      "responses": [
+        "Here's what we've recently launched:\n\n🚀 **Version 2.5** - Advanced NLP engine\n📊 **New Dashboard** - Real-time analytics\n🤖 **GPT Integration** - Enhanced responses\n📱 **Mobile App** - iOS & Android beta\n\nCheck our blog for full release notes!",
+        "We just released our biggest update yet! Version 2.5 includes a completely revamped AI engine, real-time analytics dashboard, and mobile app beta. Check out the changelog for details!"
+      ]
+    },
+    {
+      "tag": "unknown",
+      "patterns": [],
+      "responses": [
+        "I'm not sure I understand that question. Could you please rephrase it? 🤔",
+        "I don't have a specific answer for that yet. Could you try asking in a different way?",
+        "That's a great question, but I don't have enough information to answer it accurately. Could you rephrase or ask something else?",
+        "I'm still learning! Could you try rephrasing your question? I'm better at answering questions about our services, pricing, and support."
+      ]
+    }
+  ]
+}
